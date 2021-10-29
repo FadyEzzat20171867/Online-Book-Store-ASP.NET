@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="FinalProject.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 231px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:Image ID="Image1" runat="server" Height="88px" ImageUrl="BookLogo.png" Width="203px" />
+                            </td>
+                            <td>
+                                <asp:TextBox ID="TextBox1" runat="server" Font-Bold="False" Font-Names="Andalus" Font-Size="Large" Height="40px" Width="753px">Search for an item</asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:Button ID="Button1" runat="server" BackColor="#666699" BorderColor="#333399" Font-Bold="True" Font-Names="Andalus" ForeColor="White" Height="36px" Text="Search " Width="77px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/editCustomers.aspx">Edit Customers</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/editBook.aspx">Edit Books</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/editAuthors.aspx">Edit Authors</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Login.aspx">User Mode</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+    
+</body>
+</html>

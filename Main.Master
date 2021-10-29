@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="FinalProject.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 231px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style2">
+                                <asp:Image ID="Image1" runat="server" Height="88px" ImageUrl="BookLogo.png" Width="203px" />
+                            </td>
+                            <td>
+                                <asp:TextBox ID="searchTxt" runat="server" Font-Bold="False" Font-Names="Andalus" Font-Size="Large" Height="40px" Width="753px"></asp:TextBox>
+                            </td>
+                            <td>
+                                <asp:Button ID="searchBtn" runat="server" BackColor="#666699" BorderColor="#333399" Font-Bold="True" Font-Names="Andalus" ForeColor="White" Height="36px" Text="Search " Width="77px" OnClick="Button1_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style1">
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Store.aspx">Store</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Authors.aspx">Authors</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
